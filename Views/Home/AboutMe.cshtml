@@ -1,0 +1,30 @@
+@model LearningActivity.Models.Student
+@{
+    ViewData["Title"] = "About Me";
+}
+
+<div class="container my-5">
+    <h1 class="text-primary mb-4">About Me</h1>
+    
+    <!-- Educational Background Section -->
+    <div class="card shadow-sm border-0 bg-light p-4 mb-4">
+        <h3 class="text-secondary">Educational Background</h3>
+        <p class="lead text-dark mt-2">@Model.Background</p>
+    </div>
+
+    <!-- Grid for Interests and Career Goals -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100 p-4">
+                <h4 class="text-info">Personal Interests</h4>
+                <p class="text-muted mt-2">@Model.Interests</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 h-100 p-4">
+                <h4 class="text-success">Career Goals</h4>
+                <p class="text-muted mt-2">@Model.CareerGoals</p>
+            </div>
+        </div>
+    </div>
+</div>

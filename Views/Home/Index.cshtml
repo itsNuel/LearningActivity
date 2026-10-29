@@ -1,0 +1,10 @@
+﻿@model LearningActivity.Models.Student
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center my-5">
+    <h1 class="display-4 font-weight-bold text-primary">Welcome to My Profile</h1>
+    <p class="lead mt-3">Hello, my name is <strong>@Model.Name</strong>.</p>
+    <p class="text-muted">I am currently enrolled in the <strong>@Model.Program</strong> program.</p>
+</div>
